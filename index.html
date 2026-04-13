@@ -1,104 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Gianluca Sfratato | design & product management</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gianluca Sfratato | Freelance interaction designer</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Gianluca Sfratato is a Freelance Interaction Designer with over 7 years of experience, specialising in Product Management and Project Management.">
+  <meta name="keywords" content="Gianluca Sfratato, interaction designer, freelance, product management, project management, UX design, design Italia, ADI">
+  <meta name="author" content="Gianluca Sfratato">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.gianlucasfratato.com/">
+ 
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gianlucasfratato.com/">
+  <meta property="og:title" content="Gianluca Sfratato — Freelance Interaction Designer">
+  <meta property="og:description" content="Gianluca Sfratato is a Freelance Interaction Designer with over 7 years of experience, specialising in Product Management and Project Management. He collaborates with agencies, startups and digital companies">
+  <meta property="og:locale" content="it_IT">
+ 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gianluca Sfratato — Freelance Interaction Designer">
+  <meta name="twitter:description" content="Freelance Interaction Designer with over 7 years of experience, specialising in Product Management and Project Management.">
+ 
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gianluca Sfratato",
+    "url": "https://www.gianlucasfratato.com",
+    "jobTitle": "Freelance Interaction Designer",
+    "description": "Freelance Interaction Designer con oltre 7 anni di esperienza in Product Management e Project Management.",
+    "sameAs": [
+      "https://www.linkedin.com/in/gianlucasfratato"
+    ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Associazione per il Disegno Industriale (ADI)",
+      "url": "https://www.adi-design.org"
+    }
+  }
+  </script>
+  
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    :root {
+      --bg: #1a1a1a;
+      --text: #e8e4dc;
+      --text-dim: #8a8680;
+      --link: #6b7fd4;
+      --link-hover: #9aaaf0;
+      --rule: #2e2e2e;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --font-serif: Georgia, "Times New Roman", Times, serif;
+    }
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    html {
+      font-size: 16px;
+      background-color: var(--bg);
+      color: var(--text);
+    }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    body {
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    /* ── Layout ── */
+    .page {
+      flex: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 2rem;
+      width: 100%;
+    }
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    /* ── Name / header ── */
+    .site-name {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── Bio paragraphs ── */
+    .bio {
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .bio p + p {
+      margin-top: 1.4em;
+    }
+
+    /* ── Inline link ── */
+    .bio a,
+    .actions a {
+      color: var(--link);
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .bio a:hover,
+    .actions a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── Action links ── */
+    .actions {
+      display: flex;
+      gap: 3rem;
+      margin-top: 2.5rem;
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+	  font-style: italic;
+    }
+
+    .actions a {
+      font-style: normal;
+      color: var(--link);
+    }
+
+    .actions a::before {
+      content: "> ";
+      font-style: normal;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    /* ── Footer note ── */
+    .footer-note {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    /* ── Responsive: desktop ── */
+    @media (min-width: 768px) {
+      .page {
+        padding: 3.5rem 2rem 2.5rem;
+      }
+
+      .site-name {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .page {
+        padding: 4rem 0 3rem;
+      }
+    }
+  </style>
 </head>
+<body>
+  <main class="page">
+    <p class="site-name">Gianluca Sfratato</p>
 
-<body class="index-page">
+    <div class="bio">
+      <p>Freelance Interaction Designer with over 7 years of experience, specialising in Product Management and Project Management.</p>
 
-  <header id="header" class="header d-flex align-items-center sticky-top d-none">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <p>I collaborate with agencies, startups and digital companies in the design and development of products and services, leading multidisciplinary teams and coordinating processes that integrate strategy, design and technology.</p>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1 class="sitename">Gianluca Sfratato</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+      <p>I am a member of <a href="https://www.adi-design.org" target="_blank" rel="noopener">Associazione per il Disegno Industriale (ADI)</a> and serve as Coordinator of the Territorial Commission of the Permanent Observatory for Design at ADI for the Marche-Abruzzo-Molise delegation.</p>
     </div>
-  </header>
 
-  <main class="main">
+    <nav class="actions">
+      <a href="mailto:info@gianlucasfratato.com">Contact me</a>
+      <a href="https://www.linkedin.com/in/gianlucasfratato" target="_blank" rel="noopener">Find me on LinkedIn</a>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section" style="height: 90vh;">
+    <hr class="divider">
 
-      <div class="container h-100">
-        <div class="row ">
-          <div class="col-lg-6  " data-aos="fade-up" data-aos-delay="100">
-            <h3>Website under construction.</h3>
-                  <div class="social-links d-flex">
-                   <a href="mailto:info@gianlucasfratato.com"><i class="bi bi-envelope" style="font-size: 24px; padding:0 12px;";></i></a>
-                   <a href="https://www.linkedin.com/in/gianlucasfratato/"><i class="bi bi-linkedin" style="font-size: 24px; padding:0 12px;";></i></a>
-                 </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-   
-
+    <p class="footer-note">This website has been designed to minimise the energy consumption and CO<sub>2</sub> emissions that result from navigating the internet.</p>
   </main>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
